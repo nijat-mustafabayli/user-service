@@ -1,0 +1,14 @@
+version: '3'
+services:
+  usermanagement-db:
+    image: "postgres:12"
+    ports:
+      - "15432:5432"
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+      - POSTGRES_DB=usermanagement
+    volumes:
+      - usermanagement-data:/var/lib/postgresql/data/
+volumes:
+  usermanagement-data:

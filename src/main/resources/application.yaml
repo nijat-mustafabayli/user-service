@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Usermanagement
+  datasource:
+    url: jdbc:postgresql://localhost:15432/usermanagement
+    username: test
+    password: test
